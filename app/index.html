@@ -32,14 +32,14 @@
         <a href="#" class="navbar-left"><img src="/images/ms1-logo.png" class="ms1"></a>
         <ul class="nav navbar-nav navbar-right nav-desktop">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#" ng-click="nav('/pages/about.html')">About</a></li>
-          <li><a href="#" ng-click="nav('/pages/contact.html')">Contact</a></li>
+          <li ng-click="nav($event, '/pages/about.html')"><a href="#">About</a></li>
+          <li ng-click="nav($event, '/pages/contact.html')"><a href="#">Contact</a></li>
         </ul>
         <button type="button" class="btn btn-lg btn-link pull-right nav-mobile">
           <span class="glyphicon glyphicon-menu-hamburger nav-mobile-down" aria-hidden="true"></span>
         </button>
       </div>
-      <div class="container" ng-include="filePath"></div>
+      <div ng-include="filePath"></div>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

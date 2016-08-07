@@ -88,6 +88,10 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+  .navbar-right > .active > a {
+    color: #FFFFFF;
+  }
 }
 .ms1 {
   max-width: 80px;
